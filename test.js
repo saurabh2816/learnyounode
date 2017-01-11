@@ -1,10 +1,15 @@
 // this file for the JS code you need
 // to run while learning diffferent modules of learnyounode
 
-exports.circleArea = function(r) {
-  return 3.14*r*r;
-}
+var fs = require('fs');
+var dir = "/Users/rana/Desktop/git/learnyounode";
 
-exports.squareArea = function(side) {
-  return side*side;
-}
+fs.readdir(dir, function(err, files) {
+  files.forEach(function(items){
+    console.log(items);
+  });
+});
+
+// checking arguments index
+// console.log(process.argv[2]);
+// console.log(process.argv[3]);

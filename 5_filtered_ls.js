@@ -12,3 +12,4 @@ function callback( err, list) {
   for(var i=0; i<list.length; i++)
   if(ext == path.extname(list[i]))
   console.log(list[i]);
+}
